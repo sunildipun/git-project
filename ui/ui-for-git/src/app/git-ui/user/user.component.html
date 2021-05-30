@@ -1,0 +1,13 @@
+<section class="container">
+    <ng-container *ngFor="let user of users; let i = index;">
+        <mat-card class="card">
+            <mat-card-header>
+              <div mat-card-avatar class="header-image" [ngStyle]="{'background-image': getAvatar(user.avatar_url)}" ></div>
+              <mat-card-title>{{user.login}}</mat-card-title>
+            </mat-card-header>
+            <mat-card-actions class="action">
+                <button mat-stroked-button (click)="openGit(user.html_url)" color="primary">Visit Git Page</button>
+            </mat-card-actions>
+        </mat-card>
+    </ng-container>
+</section>

@@ -1,0 +1,29 @@
+.container {
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    .card {
+
+        width: 350px;
+        max-width: 350px;
+        margin: 15px;
+        height: 210px;
+
+
+        .header-image {
+            background-size: cover;
+        }
+
+        .para {
+            height: 90px;
+        }
+
+        .action {
+            display: flex;
+            justify-content: flex-end;
+        }
+    }
+}

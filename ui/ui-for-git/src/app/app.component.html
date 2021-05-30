@@ -1,0 +1,27 @@
+<section class="container">
+    
+    <mat-toolbar class="header" color="primary">
+        
+        <h1 style="cursor: pointer;" routerLink="/app">Cambium GIT Dash</h1>
+
+        <div class="input">
+                <div class="width">
+                    <select required [formControl]="selectInput">
+                      <option value="0">Repo List (View 1)</option>
+                      <option value="1">User (View 2)</option>
+                    </select>
+                </div>
+            
+                <div class="width">
+                    <input [formControl]="searchInput" placeholder="Search" />
+                </div>
+
+                <button mat-button (click)="search()" color="accent">Search</button>
+             
+        </div>
+    </mat-toolbar>
+
+    <div class="container__body">    
+        <router-outlet></router-outlet>
+    </div>
+</section>

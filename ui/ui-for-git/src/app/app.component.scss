@@ -1,0 +1,29 @@
+.container {
+    height:100vh;
+    width:100vw;
+    display: flex;
+    flex-direction: column;
+
+    .header {
+        padding: 20px;
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        display: flex;
+        justify-content: space-between;
+
+        .input {
+            display: flex;
+            justify-content: space-between;
+            width: 30%;
+
+            .width {
+                width: 8em;
+            }
+        }
+    }
+
+    .container__body {
+        flex: 90%;
+    }
+}

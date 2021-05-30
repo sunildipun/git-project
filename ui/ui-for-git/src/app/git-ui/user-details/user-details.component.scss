@@ -1,0 +1,27 @@
+.container {
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    .card {
+
+        width: 700px;
+        margin: 15px;
+        height:400px;
+
+        .header-image {
+            background-size: cover;
+        }
+
+        .mid {
+            height:270px
+        }
+
+        .action {
+            display: flex;
+            justify-content: flex-end;
+        }
+    }
+}
